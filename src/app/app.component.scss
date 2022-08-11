@@ -1,0 +1,18 @@
+@import "~@alaskaairux/design-tokens/dist/tokens/SCSSVariables";
+@import "~@alaskaairux/webcorestylesheets/dist/breakpoints";
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--auro-color-border-primary-on-light);
+  background-color: white;
+
+  @include auro_breakpoint--sm {
+    padding: 10px 0 10px 25px;
+  }
+}
