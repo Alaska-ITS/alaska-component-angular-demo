@@ -6,34 +6,51 @@
       official
       style="width: 72px"
     ></auro-alaska>
-
     <alaska-navmenu slot="left-menu">
-      <alaska-navmenuitem bottomIndicator selected id="1" noIcon>
+      <alaska-navmenuitem
+        value="start"
+        routerLink="/start"
+        routerLinkActive="active"
+        bottomIndicator
+        id="1"
+        noIcon>
         <auro-icon
           customColor
           slot="left-icon"
           category="terminal"
           name="radar-stroke"
         ></auro-icon>
-        <span slot="title">Dashboard</span>
+        <span slot="title">Start</span>
       </alaska-navmenuitem>
-      <alaska-navmenuitem bottomIndicator id="2" noIcon>
+      <alaska-navmenuitem
+        value="inputs"
+        routerLink="/inputs"
+        routerLinkActive="active"
+        bottomIndicator
+        id="2"
+        noIcon>
         <auro-icon
           customColor
           slot="left-icon"
           category="terminal"
           name="plane-diag-stroke"
         ></auro-icon>
-        <span slot="title">Flights</span>
+        <span slot="title">Inputs</span>
       </alaska-navmenuitem>
-      <alaska-navmenuitem bottomIndicator id="3" noIcon>
+      <alaska-navmenuitem
+        value="layouts"
+        routerLink="/layouts"
+        routerLinkActive="active"
+        bottomIndicator
+        id="3"
+        noIcon>
         <auro-icon
           customColor
           slot="left-icon"
           category="terminal"
           name="boarding-pass-stroke"
         ></auro-icon>
-        <span slot="title">PNRS</span>
+        <span slot="title">Layouts</span>
       </alaska-navmenuitem>
       <alaska-navmenuitem bottomIndicator id="4" noIcon>
         <auro-icon
