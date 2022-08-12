@@ -24,3 +24,4 @@ import "@phtnalaska/alaska-chip";
 import "@phtnalaska/alaska-elitetags";
 import "@phtnalaska/alaska-menu";
 import "@phtnalaska/alaska-menu/dist/alaska-menu-item";
+import "@phtnalaska/alaska-table";
