@@ -1,1 +1,240 @@
-<p>layout-demo works!</p>
+<h1>Accordian</h1>
+
+<div style="padding:20px;display:flex;flex-direction:column;gap:20px">
+  <alaska-accordion chromeless>
+    <span slot="trigger">Accordion</span>
+    Content goes here content goes here Content goes here content goes here<br>
+    Content goes here content goes here Content goes here content goes here<br>
+    Content goes here content goes here Content goes here content goes here<br>
+    Content goes here content goes here Content goes here content goes here<br>
+  </alaska-accordion>
+  <alaska-accordion chromeless expanded>
+    <span slot="trigger">Accordion</span>
+    Content goes here content goes here Content goes here content goes here<br>
+    Content goes here content goes here Content goes here content goes here<br>
+    Content goes here content goes here Content goes here content goes here<br>
+    Content goes here content goes here Content goes here content goes here<br>
+  </alaska-accordion>
+</div>
+
+<h1>Alerts</h1>
+
+<div style="padding:20px;display:flex;flex-direction:column;gap:20px">
+  <alaska-alert
+    buttonLabel="ButtonLabel"
+    type="success"
+    [isActionVisible]="true"
+    [isIconVisible]="undefined"
+  >
+    <p class="title">Information Title</p>
+    <p>Alert Text</p>
+  </alaska-alert>
+
+  <alaska-alert
+    buttonLabel="ButtonLabel"
+    type="success"
+    [isActionVisible]="true"
+    [isIconVisible]="undefined"
+  >
+    <p class="title">Information Title</p>
+  </alaska-alert>
+
+  <alaska-alert
+    buttonLabel="ButtonLabel"
+    type="success"
+    [isActionVisible]="true"
+    [isIconVisible]="undefined"
+  >
+    <p>Alert Text</p>
+  </alaska-alert>
+
+  <alaska-alert
+    buttonLabel=""
+    type="success"
+    [isActionVisible]="true"
+    [isIconVisible]="undefined"
+  >
+    <p class="title">Information Title</p>
+    <p>Alert Text</p>
+  </alaska-alert>
+
+  <alaska-alert
+    buttonLabel=""
+    type="success"
+    [isActionVisible]="true"
+    [isIconVisible]="undefined"
+  >
+    <p class="title">Information Title</p>
+  </alaska-alert>
+
+  <alaska-alert
+    buttonLabel=""
+    type="success"
+    [isActionVisible]="true"
+    [isIconVisible]="undefined"
+  >
+    <p>Alert Text</p>
+  </alaska-alert>
+
+  <alaska-alert
+    buttonLabel="ButtonLabel"
+    type="success"
+    [isActionVisible]="false"
+    [isIconVisible]="undefined"
+  >
+    <p class="title">Information Title</p>
+    <p>Alert Text</p>
+  </alaska-alert>
+
+  <alaska-alert
+    buttonLabel="ButtonLabel"
+    type="success"
+    [isActionVisible]="false"
+    [isIconVisible]="undefined"
+  >
+    <p class="title">Information Title</p>
+  </alaska-alert>
+
+  <alaska-alert
+    buttonLabel="ButtonLabel"
+    type="success"
+    [isActionVisible]="false"
+    [isIconVisible]="undefined"
+  >
+    <p>Alert Text</p>
+  </alaska-alert>
+</div>
+
+<h1>Badge</h1>
+
+<div style="display:flex;flex-direction:row;gap:10px;padding:10px">
+  <alaska-badge>Badge Text</alaska-badge>
+  <alaska-badge success>Badge Text</alaska-badge>
+  <alaska-badge error>Badge Text</alaska-badge>
+  <alaska-badge warning>Badge Text</alaska-badge>
+</div>
+
+<h1>Chip</h1>
+
+<div style="display:flex;flex-direction:row;gap:10px;padding:10px">
+  <alaska-chip icon="default" size="default" [filled]="true" [disabled]="false">
+    <auro-icon
+      slot="left-icon"
+      category="terminal"
+      name="plane-side-stroke"
+      customSize
+    ></auro-icon>
+    Chip Text
+  </alaska-chip>
+
+  <alaska-chip icon="left" size="default" [filled]="true" [disabled]="false">
+    <auro-icon
+      slot="left-icon"
+      category="terminal"
+      name="plane-side-stroke"
+      customSize
+    ></auro-icon>
+    Chip Text
+  </alaska-chip>
+
+  <alaska-chip icon="right" size="default" [filled]="true" [disabled]="false">
+    <auro-icon
+      slot="left-icon"
+      category="terminal"
+      name="plane-side-stroke"
+      customSize
+    ></auro-icon>
+    Chip Text
+  </alaska-chip>
+
+  <alaska-chip icon="both" size="default" [filled]="true" [disabled]="false">
+    <auro-icon
+      slot="left-icon"
+      category="terminal"
+      name="plane-side-stroke"
+      customSize
+    ></auro-icon>
+    Chip Text
+  </alaska-chip>
+</div>
+
+<h1>Elite Tags</h1>
+
+<div style="display: grid; grid-template-columns: auto auto; grid-gap: 10px;">
+  <alaska-elitetags category="elite" type="mpv" size="large"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="mpv" size="small"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="gold" size="large"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="gold" size="small"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="75k" size="large"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="75k" size="small"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="100k" size="large"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="100k" size="small"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="mm" size="large"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="mm" size="small"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="2mm" size="large"></alaska-elitetags>
+  <alaska-elitetags category="elite" type="2mm" size="small"></alaska-elitetags>
+</div>
+
+<h1>Menu</h1>
+
+<h2>Type One</h2>
+<div>
+  <alaska-menu>
+    <alaska-menu-item value="Item 1" icon="leading">
+      <auro-icon slot="leading" category="interface" name="checkmark-lg" customColor></auro-icon>
+      Menu Item Name
+    </alaska-menu-item>
+    <alaska-menu-item value="Item 2" icon="trailing">
+      <auro-icon slot="trailing" category="in-flight" name="elite" customColor></auro-icon>
+      Menu Item Name
+    </alaska-menu-item>
+    <alaska-menu-item value="Item 3" icon="both">
+      <auro-icon slot="leading" category="interface" name="checkmark-lg" customColor></auro-icon>
+      Menu Item Name
+      <auro-icon slot="trailing" category="in-flight" name="elite" customColor></auro-icon>
+    </alaska-menu-item>
+    <alaska-menu-item value="Item 4" icon="none">
+      <auro-icon slot="trailing" category="in-flight" name="elite" customColor></auro-icon>
+      Menu Item Name
+    </alaska-menu-item>
+  </alaska-menu>
+</div>
+
+<h2>Sub Items</h2>
+
+<div>
+  <app-menu>
+    <alaska-menu-item value="Menu Item Name 1">Menu Item Name 1</alaska-menu-item>
+    <alaska-menu-item disabled value="Menu Item Name 2">
+      Menu Item Name 2
+    </alaska-menu-item>
+    <alaska-menu-item value="Menu Item Name 3">Menu Item Name 3</alaska-menu-item>
+    <alaska-menu-item value="Menu Item Name 4">Menu Item Name 4</alaska-menu-item>
+  </app-menu>
+  
+  <app-menu>
+    <alaska-menu-item value="Menu Item Name 1">Menu Item Name 1</alaska-menu-item>
+    <alaska-menu-item type="category" value="Menu Item Name 2">
+      Menu Item Name 2
+    </alaska-menu-item>
+    <alaska-menu-item disabled type="category" value="Menu Item Name 3">
+      Menu Item Name 3
+    </alaska-menu-item>
+    <alaska-menu-item type="category" value="Menu Item Name 4">
+      Menu Item Name 4
+    </alaska-menu-item>
+  </app-menu>
+  
+  <app-menu>
+    <alaska-menu-item value="Menu Item Name 1">Menu Item Name 1</alaska-menu-item>
+    <alaska-menu-item type="child" value="Menu Item Name 2">
+      Menu Item Name 2
+    </alaska-menu-item>
+    <alaska-menu-item disabled type="child" value="Menu Item Name 3">
+      Menu Item Name 3
+    </alaska-menu-item>
+    <alaska-menu-item type="child" value="Menu Item Name 4">
+      Menu Item Name 4
+    </alaska-menu-item>
+  </app-menu>
+</div>
