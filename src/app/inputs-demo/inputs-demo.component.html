@@ -1,10 +1,68 @@
 <h1>Input Fields</h1>
 
-<alaska-input
-  style="width: 320px"
-  type="text"
-  name="name"
-  label="Label Text"
-  value="Input Text"
-  bordered>
-</alaska-input>
+<form [formGroup]="formGroup"
+  class="form">
+
+  <h2>Calendar</h2>
+
+  <alaska-calendar ngDefaultControl
+    formControlName="birthday"
+    disabledDates="[1659632400000]">Primary</alaska-calendar>
+
+  <pre>Value: "{{ birthday.value }}"</pre>
+
+  <h2>Input</h2>
+
+
+  <alaska-input ngDefaultControl
+    style="width: 320px"
+    required
+    type="text"
+    formControlName="firstName"
+    label="First Name"
+    bordered>
+  </alaska-input>
+
+  <pre>Value: "{{ firstName.value }}"</pre>
+
+
+  <h2>Popover</h2>
+
+
+  <alaska-popover>
+    <div css="background-color: pink;">
+      Hello world
+    </div>
+    <a href="#"
+      slot="trigger">Test Popover</a>
+  </alaska-popover>
+
+  <h2>Search Bar</h2>
+  <alaska-searchbar ngDefaultControl
+    formControlName="search"></alaska-searchbar>
+
+  <pre>Value: "{{ search.value }}"</pre>
+
+  <h2>Dropdown</h2>
+
+  <alaska-dropdown ngDefaultControl
+    formControlName="dropdown">
+    <alaska-menu style="display: flex; flex-direction: column;">
+      <alaska-menu-item value="Test 1">Test 1</alaska-menu-item>
+      <alaska-menu-item value="Test 2">Test 2</alaska-menu-item>
+      <alaska-menu-item value="Test 3">Test 3</alaska-menu-item>
+      <alaska-menu-item value="Test 4">Test 4</alaska-menu-item>
+      <alaska-menu-item value="Test 5">Test 5</alaska-menu-item>
+    </alaska-menu>
+  </alaska-dropdown>
+
+  <pre>Value: "{{ dropdown.value }}"</pre>
+
+  <h2>Checkbox</h2>
+
+  <alaska-checkbox 
+    id="checky" formControlName="checky" ngDefaultControl value="true"
+  ></alaska-checkbox>
+
+  <pre>Value: "{{ checky.value }}"</pre>
+</form>

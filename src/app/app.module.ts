@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StartInfoComponent } from './start-info/start-info.component';
 import { InputsDemoComponent } from './inputs-demo/inputs-demo.component';
 import { LayoutDemoComponent } from './layout-demo/layout-demo.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { LayoutDemoComponent } from './layout-demo/layout-demo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

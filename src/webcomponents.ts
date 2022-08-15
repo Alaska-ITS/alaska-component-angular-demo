@@ -26,3 +26,7 @@ import "@phtnalaska/alaska-elitetags";
 import "@phtnalaska/alaska-menu";
 import "@phtnalaska/alaska-menu/dist/alaska-menu-item";
 import "@phtnalaska/alaska-table";
+import "@phtnalaska/alaska-calendar";
+import "@phtnalaska/alaska-popover";
+import "@phtnalaska/alaska-searchbar";
+import "@phtnalaska/alaska-dropdown";
