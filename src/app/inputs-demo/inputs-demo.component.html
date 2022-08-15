@@ -60,9 +60,72 @@
 
   <h2>Checkbox</h2>
 
-  <alaska-checkbox 
-    id="checky" formControlName="checky" ngDefaultControl value="true"
-  ></alaska-checkbox>
+  <alaska-checkbox id="checky" formControlName="checky" ngDefaultControl value="true"></alaska-checkbox>
 
   <pre>Value: "{{ checky.value }}"</pre>
+
+  <h2>Radio</h2>
+
+  <alaska-radio-group
+  error=""
+  formControlName="radioFun" ngDefaultControl
+>
+  <span slot="legend">Form label goes here</span>
+  <alaska-radio
+    tabindex="0"
+    id="radio1"
+    label="Yes"
+    name="radioDemo"
+    value="yes"
+  ></alaska-radio>
+  <alaska-radio
+    tabindex="0"
+    id="radio2"
+    label="No"
+    name="radioDemo"
+    value="no"
+  ></alaska-radio>
+  <alaska-radio
+    tabindex="0"
+    id="radio3"
+    label="Maybe"
+    name="radioDemo"
+    value="maybe"
+  ></alaska-radio>
+</alaska-radio-group>
+
+<pre>Value: "{{ radioFun.value }}"</pre>
+
+<h2>Segment Control</h2>
+
+
+<alaska-segmentedcontrol-group
+  style="display: block;padding-bottom: 12px"
+  formControlName="segControl" ngDefaultControl
+>
+  <alaska-segmentedcontrol
+    checked
+    id="1"
+    [disabled]="false"
+    label="Label"
+    name="segmentDemo"
+    value="1"
+  ></alaska-segmentedcontrol>
+  <alaska-segmentedcontrol
+    id="2"
+    [disabled]="false"
+    label="Label"
+    name="segmentDemo"
+    value="2"
+  ></alaska-segmentedcontrol>
+</alaska-segmentedcontrol-group>
+<pre>Value: "{{ segControl.value }}"</pre>
+
+
+<h2>Toggle</h2>
+
+<alaska-toggle label="Basic" formControlName="toggles" ngDefaultControl></alaska-toggle>
+<pre>Value: "{{ toggles.value }}"</pre>
+
 </form>
+

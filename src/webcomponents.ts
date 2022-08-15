@@ -30,3 +30,8 @@ import "@phtnalaska/alaska-calendar";
 import "@phtnalaska/alaska-popover";
 import "@phtnalaska/alaska-searchbar";
 import "@phtnalaska/alaska-dropdown";
+import "@phtnalaska/alaska-radio";
+import "@phtnalaska/alaska-radio/dist/alaska-radio-group";
+import "@phtnalaska/alaska-segmentedcontrol";
+import "@phtnalaska/alaska-segmentedcontrol/dist/alaska-segmentedcontrol-group";
+import "@phtnalaska/alaska-toggle";

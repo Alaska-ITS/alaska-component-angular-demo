@@ -13,6 +13,9 @@ export class InputsDemoComponent {
   search: AbstractControl;
   dropdown: AbstractControl;
   checky: AbstractControl;
+  radioFun: AbstractControl;
+  segControl: AbstractControl;
+  toggles: AbstractControl;
 
   constructor(private fb: FormBuilder) {
     this.formGroup = this.fb.group({
@@ -21,12 +24,18 @@ export class InputsDemoComponent {
       search: ['', [Validators.required]],
       dropdown: ['', [Validators.required]],
       checky: ['', [Validators.required]],
+      radioFun: ['', [Validators.required]],
+      segControl: ['2', [Validators.required]],
+      toggles: ['', [Validators.required]],
     });
     this.firstName = this.formGroup.controls['firstName'];
     this.birthday = this.formGroup.controls['birthday'];
     this.search = this.formGroup.controls['search'];
     this.dropdown = this.formGroup.controls['dropdown'];
     this.checky = this.formGroup.controls['checky'];
+    this.radioFun = this.formGroup.controls['radioFun'];
+    this.segControl = this.formGroup.controls['segControl'];
+    this.toggles = this.formGroup.controls['toggles'];
 
 
   }
