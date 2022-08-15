@@ -16,6 +16,7 @@ import "@phtnalaska/alaska-radio/dist/alaska-radio-group";
 import "@phtnalaska/alaska-checkbox";
 import "@phtnalaska/alaska-checkbox/dist/alaska-checkbox-group";
 import "@phtnalaska/alaska-badge";
+import "@phtnalaska/alaska-navigation";
 import "@phtnalaska/alaska-navmenuitem";
 import "@phtnalaska/alaska-navmenuitem/dist/alaska-navmenu";
 import "@phtnalaska/alaska-accordion";

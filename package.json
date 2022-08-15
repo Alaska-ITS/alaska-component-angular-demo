@@ -36,6 +36,7 @@
     "@phtnalaska/alaska-elitetags": "^0.3.0",
     "@phtnalaska/alaska-input": "^0.4.0",
     "@phtnalaska/alaska-menu": "^0.7.0",
+    "@phtnalaska/alaska-navigation": "^0.21.0",
     "@phtnalaska/alaska-navmenuitem": "^0.5.0",
     "@phtnalaska/alaska-radio": "^0.2.0",
     "@phtnalaska/alaska-table": "^0.4.0",

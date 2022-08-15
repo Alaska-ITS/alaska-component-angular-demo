@@ -1,6 +1,7 @@
 @import "~@alaskaairux/design-tokens/dist/tokens/SCSSVariables";
 @import "~@alaskaairux/webcorestylesheets/dist/breakpoints";
 
+/*
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -15,4 +16,9 @@
   @include auro_breakpoint--sm {
     padding: 10px 0 10px 25px;
   }
+}
+*/
+
+.main-outlet{
+  padding-top: 72px;
 }
