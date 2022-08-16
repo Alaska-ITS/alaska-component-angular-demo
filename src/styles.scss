@@ -10,7 +10,9 @@
 @import "~@phtnalaska/design-tokens/dist/tokens/SCSSVariables";
 @import "~@phtnalaska/design-tokens/dist/tokens/SassCustomProperties";
 
-$asset-font-circular-dir: 'https://resource.alaskaair.net/stylesheets/circular/';
+//$asset-font-circular-dir: 'https://resource.alaskaair.net/stylesheets/circular/';
+// @import "~@phtnalaska/design-tokens/dist/font-face.scss";
+
 
 body { 
     margin: auto;
