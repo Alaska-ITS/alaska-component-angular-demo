@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. Install the Angular CLI
 2. run `npm install` to get all of the dependencies
+3. Open `http://localhost:4200/` in your browser
 
 ## Development server
 
