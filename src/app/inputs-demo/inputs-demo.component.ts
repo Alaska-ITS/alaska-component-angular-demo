@@ -22,11 +22,11 @@ export class InputsDemoComponent {
       firstName: ['Don', [Validators.required]],
       birthday: ['', [Validators.required]],
       search: ['', [Validators.required]],
-      dropdown: ['', [Validators.required]],
-      checky: ['', [Validators.required]],
+      dropdown: ['Test 3', [Validators.required]],
+      checky: [true, [Validators.required]],
       radioFun: ['', [Validators.required]],
       segControl: ['2', [Validators.required]],
-      toggles: ['', [Validators.required]],
+      toggles: [true, [Validators.required]],
     });
     this.firstName = this.formGroup.controls['firstName'];
     this.birthday = this.formGroup.controls['birthday'];
@@ -41,6 +41,17 @@ export class InputsDemoComponent {
   }
 
   ngOnInit(): void {
+  }
+
+  onDateFrom(e : any){
+    console.log(e);
+  }
+  onDateTo(e : any){
+    console.log(e);
+  }
+
+  onDoneClick(){
+    console.log('done');
   }
 
 }

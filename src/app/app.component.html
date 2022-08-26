@@ -1,10 +1,17 @@
-  <alaska-navigation action="search" [sticky]="true" [max]="5" style="top: 0">
+<div style="zoom: 0.8">
+  <alaska-navigation
+    action="search"
+    [withIcon]="false"
+    [sticky]="false"
+    [max]="5"
+  >
     <auro-alaska
       customColor
       slot="logo"
       official
       style="width: 72px"
     ></auro-alaska>
+
     <alaska-navmenu slot="left-menu">
       <alaska-navmenuitem
         value="start"
@@ -12,6 +19,7 @@
         routerLinkActive="active"
         bottomIndicator
         id="1"
+        tabindex="" 
         noIcon>
         <auro-icon
           customColor
@@ -27,6 +35,7 @@
         routerLinkActive="active"
         bottomIndicator
         id="2"
+        tabindex="" 
         noIcon>
         <auro-icon
           customColor
@@ -42,6 +51,7 @@
         routerLinkActive="active"
         bottomIndicator
         id="3"
+        tabindex="" 
         noIcon>
         <auro-icon
           customColor
@@ -69,8 +79,88 @@
         ></auro-icon>
         <span slot="title">Tickets</span>
       </alaska-navmenuitem>
+      <alaska-navmenuitem bottomIndicator id="6" noIcon>
+        <auro-icon
+          customColor
+          slot="left-icon"
+          category="interface"
+          name="location-stroke"
+        ></auro-icon>
+        <span slot="title">Item Label</span>
+      </alaska-navmenuitem>
     </alaska-navmenu>
-    <!-- <alaska-searchbar slot="right-menu"></alaska-searchbar> -->
+
+    <alaska-navmenu vertical slot="sidebar">
+      <alaska-navmenuitem
+        value="start"
+        routerLink="/start"
+        routerLinkActive="active"
+        rightIndicator
+        id="1"
+        noIcon>
+        <auro-icon
+          customColor
+          slot="left-icon"
+          category="terminal"
+          name="radar-stroke"
+        ></auro-icon>
+        <span slot="title">Start</span>
+      </alaska-navmenuitem>
+      <alaska-navmenuitem
+        value="inputs"
+        routerLink="/inputs"
+        routerLinkActive="active"
+        rightIndicator
+        id="2"
+        noIcon>
+        <auro-icon
+          customColor
+          slot="left-icon"
+          category="terminal"
+          name="plane-diag-stroke"
+        ></auro-icon>
+        <span slot="title">Inputs</span>
+      </alaska-navmenuitem>
+      <alaska-navmenuitem rightIndicator id="4" noIcon>
+        <auro-icon
+          customColor
+          slot="left-icon"
+          category="interface"
+          name="notification"
+        ></auro-icon>
+        <span slot="title">Guests</span>
+      </alaska-navmenuitem>
+      <alaska-navmenuitem rightIndicator id="4" noIcon>
+        <auro-icon
+          customColor
+          slot="left-icon"
+          category="interface"
+          name="notification"
+        ></auro-icon>
+        <span slot="title">Guests</span>
+      </alaska-navmenuitem>
+      <alaska-navmenuitem rightIndicator id="5" noIcon>
+        <auro-icon
+          customColor
+          slot="left-icon"
+          category="interface"
+          name="printer"
+        ></auro-icon>
+        <span slot="title">Tickets</span>
+      </alaska-navmenuitem>
+      <alaska-navmenuitem rightIndicator id="6" noIcon>
+        <auro-icon
+          customColor
+          slot="left-icon"
+          category="interface"
+          name="location-stroke"
+        ></auro-icon>
+        <span slot="title">Item Label</span>
+      </alaska-navmenuitem>
+    </alaska-navmenu>
+
+    null
+    <alaska-searchbar slot="right-menu"></alaska-searchbar>
     <alaska-navmenu slot="right-menu">
       <alaska-navmenuitem noIndicator id="3">
         <auro-icon
@@ -83,7 +173,8 @@
       </alaska-navmenuitem>
     </alaska-navmenu>
   </alaska-navigation>
-
+</div>
+  
 <section class="main-outlet">
   <router-outlet></router-outlet>
 </section>

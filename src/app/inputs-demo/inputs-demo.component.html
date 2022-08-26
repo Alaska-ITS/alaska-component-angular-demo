@@ -3,11 +3,29 @@
 <form [formGroup]="formGroup"
   class="form">
 
-  <h2>Calendar</h2>
+  <h2>Calendar/Datepicker</h2>
+  <alaska-datepicker
+    (date-from-changed)="onDateFrom($event)"
+    (date-to-changed)="onDateTo($event)"
+    [doubleDatePicker]="true"
+    [minDate]="1660097750257"
+    [noRange]="undefined"
+    [maxDate]="1670097845510"
+    [disabledDates]=""
+  >
+  <alaska-button tertiary type="button" slot="btn-foot-left">
+    Cancel
+  </alaska-button>
+  <alaska-button
+    primary
+    type="button"
+    (onClick)="onDoneClick()"
+    slot="btn-foot-right"
+  >
+    Done
+  </alaska-button>
+</alaska-datepicker>
 
-  <alaska-calendar ngDefaultControl
-    formControlName="birthday"
-    disabledDates="[1659632400000]">Primary</alaska-calendar>
 
   <pre>Value: "{{ birthday.value }}"</pre>
 
@@ -37,6 +55,8 @@
       slot="trigger">Test Popover</a>
   </alaska-popover>
 
+  <br /><br /><br /><br /><br /><br />
+
   <h2>Search Bar</h2>
   <alaska-searchbar ngDefaultControl
     formControlName="search"></alaska-searchbar>
@@ -46,7 +66,8 @@
   <h2>Dropdown</h2>
 
   <alaska-dropdown ngDefaultControl
-    formControlName="dropdown">
+    formControlName="dropdown"
+    >
     <alaska-menu style="display: flex; flex-direction: column;">
       <alaska-menu-item value="Test 1">Test 1</alaska-menu-item>
       <alaska-menu-item value="Test 2">Test 2</alaska-menu-item>
