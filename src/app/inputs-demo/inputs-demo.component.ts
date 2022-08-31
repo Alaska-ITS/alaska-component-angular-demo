@@ -17,6 +17,9 @@ export class InputsDemoComponent {
   segControl: AbstractControl;
   toggles: AbstractControl;
 
+  toDate: Date = new Date();
+  fromDate: Date = new Date();
+
   constructor(private fb: FormBuilder) {
     this.formGroup = this.fb.group({
       firstName: ['Don', [Validators.required]],
@@ -36,18 +39,18 @@ export class InputsDemoComponent {
     this.radioFun = this.formGroup.controls['radioFun'];
     this.segControl = this.formGroup.controls['segControl'];
     this.toggles = this.formGroup.controls['toggles'];
-
-
   }
 
   ngOnInit(): void {
   }
 
   onDateFrom(e : any){
-    console.log(e);
+    console.log('FROMs', e);
+    this.fromDate = e.detail;
   }
   onDateTo(e : any){
-    console.log(e);
+    console.log('TO', e);
+    this.toDate = e.detail;
   }
 
   onDoneClick(){

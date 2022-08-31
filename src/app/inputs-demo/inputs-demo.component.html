@@ -3,7 +3,23 @@
 <form [formGroup]="formGroup"
   class="form">
 
-  <h2>Calendar/Datepicker</h2>
+  <h2>Calendar</h2>
+
+  <alaska-calendar
+  forceNarrow
+  disabledDates="[1659632400000]">Primary</alaska-calendar>
+  <br><br>
+  <alaska-calendar forceNarrow noRange disabledDates="[1659632400000]">Primary</alaska-calendar>
+  <br><br>
+  <alaska-calendar disabledDates="[1659632400000]">Primary</alaska-calendar>
+
+  <h2>Datepicker</h2>
+
+<pre>
+  From Date: {{ fromDate }}
+  To Date: {{ toDate }}
+</pre>
+
   <alaska-datepicker
     (date-from-changed)="onDateFrom($event)"
     (date-to-changed)="onDateTo($event)"
@@ -26,6 +42,9 @@
   </alaska-button>
 </alaska-datepicker>
 
+<p>
+  why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? 
+</p>
 
   <pre>Value: "{{ birthday.value }}"</pre>
 
