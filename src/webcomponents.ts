@@ -1,5 +1,4 @@
 // import any web components here
-import '@alaskaairux/auro-button';
 import "@alaskaairux/auro-icon";
 import "@alaskaairux/auro-icon/dist/auro-alaska";
 import "@aurodesignsystem/auro-menu";
@@ -10,7 +9,7 @@ import "@alaskaairux/auro-radio";
 import "@alaskaairux/auro-radio/dist/auro-radio-group";
 import "@alaskaairux/auro-radio/dist/auro-radio-group";
 import "@phtnalaska/alaska-input";
-import "@phtnalaska/alaska-button";
+import "@alaska-its/alaska-button";
 import "@phtnalaska/alaska-badge";
 import "@phtnalaska/alaska-radio";
 import "@phtnalaska/alaska-radio/dist/alaska-radio-group";

@@ -10,7 +10,7 @@
   },
   "private": true,
   "dependencies": {
-    "@alaskaairux/auro-button": "^6.3.8",
+    "@alaska-its/alaska-button": "^1.0.0",
     "@alaskaairux/auro-checkbox": "^1.1.8",
     "@alaskaairux/auro-header": "^1.5.2",
     "@alaskaairux/auro-icon": "^3.2.0",
@@ -31,7 +31,6 @@
     "@phtnalaska/alaska-accordion": "^0.12.0",
     "@phtnalaska/alaska-alert": "^0.7.0",
     "@phtnalaska/alaska-badge": "^0.6.0",
-    "@phtnalaska/alaska-button": "^0.8.0",
     "@phtnalaska/alaska-calendar": "^0.28.0",
     "@phtnalaska/alaska-checkbox": "^0.10.0",
     "@phtnalaska/alaska-chip": "^0.10.0",
