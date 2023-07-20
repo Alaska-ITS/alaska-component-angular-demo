@@ -18,40 +18,40 @@
         <alaska-navmenuitem label="Layouts" (click)="goToPage('layouts')">
         </alaska-navmenuitem>
       </alaska-navmenuitem>
-      <alaska-navmenuitem bottomIndicator label="Flights">
+      <alaska-navmenuitem bottomIndicator label="Flights" (click)="goToPage('start')">
         <auro-icon customColor slot="icon" category="terminal" name="plane-diag-stroke" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
       </alaska-navmenuitem>
       <alaska-navmenuitem label="Group Menu" group>
         <auro-icon slot="icon" category="destination" name="sun" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
-        <alaska-navmenuitem label="Child Icon" groupItem>
+        <alaska-navmenuitem label="Child Icon" groupItem (click)="goToPage('start')">
           <auro-icon slot="icon" category="terminal" name="radar-stroke" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
         </alaska-navmenuitem>
-        <alaska-navmenuitem label="Child Icon" groupItem>
+        <alaska-navmenuitem label="Child Icon" groupItem (click)="goToPage('start')">
           <auro-icon slot="icon" category="terminal" name="radar-stroke" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
         </alaska-navmenuitem>
         <alaska-navmenuitem label="With Child" groupItem>
           <auro-icon slot="icon" category="destination" name="sun" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
-          <alaska-navmenuitem label="Child Item"></alaska-navmenuitem>
-          <alaska-navmenuitem label="Child Item"></alaska-navmenuitem>
-          <alaska-navmenuitem label="Child Item"></alaska-navmenuitem>
-          <alaska-navmenuitem label="Child Item"></alaska-navmenuitem>
+          <alaska-navmenuitem label="Child Item" (click)="goToPage('start')"></alaska-navmenuitem>
+          <alaska-navmenuitem label="Child Item" (click)="goToPage('start')"></alaska-navmenuitem>
+          <alaska-navmenuitem label="Child Item" (click)="goToPage('start')"></alaska-navmenuitem>
+          <alaska-navmenuitem label="Child Item" (click)="goToPage('start')"></alaska-navmenuitem>
           <alaska-navmenuitem label="With Child">
             <auro-icon slot="icon" category="destination" name="car-rental" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
-            <alaska-navmenuitem label="Child Item"></alaska-navmenuitem>
-            <alaska-navmenuitem label="Child Item"></alaska-navmenuitem>
+            <alaska-navmenuitem label="Child Item" (click)="goToPage('start')"></alaska-navmenuitem>
+            <alaska-navmenuitem label="Child Item" (click)="goToPage('start')"></alaska-navmenuitem>
           </alaska-navmenuitem>
         </alaska-navmenuitem>
       </alaska-navmenuitem>
-      <alaska-navmenuitem bottomIndicator label="PNRS">
+      <alaska-navmenuitem bottomIndicator label="PNRS" (click)="goToPage('start')">
         <auro-icon customColor slot="icon" category="terminal" name="boarding-pass-stroke" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
       </alaska-navmenuitem>
-      <alaska-navmenuitem bottomIndicator label="Guests">
+      <alaska-navmenuitem bottomIndicator label="Guests" (click)="goToPage('start')">
         <auro-icon customColor slot="icon" category="interface" name="notification" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
       </alaska-navmenuitem>
-      <alaska-navmenuitem bottomIndicator label="Tickets">
+      <alaska-navmenuitem bottomIndicator label="Tickets" (click)="goToPage('start')">
         <auro-icon customColor slot="icon" category="interface" name="notification" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
       </alaska-navmenuitem>
-      <alaska-navmenuitem bottomIndicator label="Help">
+      <alaska-navmenuitem bottomIndicator label="Help" (click)="goToPage('start')">
         <auro-icon customColor slot="icon" category="alert" name="question-stroke" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
       </alaska-navmenuitem>
     </alaska-navmenu>
@@ -65,23 +65,23 @@
         <alaska-navmenuitem label="Layouts" (click)="goToPage('layouts')">
         </alaska-navmenuitem>
       </alaska-navmenuitem>
-      <alaska-navmenuitem bottomIndicator label="Menu Item" marker tabindex="0">
+      <alaska-navmenuitem bottomIndicator label="Menu Item" marker tabindex="0" (click)="goToPage('start')">
         <auro-icon slot="icon" category="terminal" name="radar-stroke" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
       </alaska-navmenuitem>
-      <alaska-navmenuitem bottomIndicator label="Menu Item">
+      <alaska-navmenuitem bottomIndicator label="Menu Item" (click)="goToPage('start')">
         <auro-icon slot="icon" category="destination" name="hotel" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
       </alaska-navmenuitem>
       <alaska-navmenuitem bottomIndicator label="With Child">
         <auro-icon slot="icon" category="destination" name="sun" customsize [ngStyle]="{'width': '24px', 'height': '24px'}"></auro-icon>
-        <alaska-navmenuitem bottomIndicator label="Child Item"></alaska-navmenuitem>
-        <alaska-navmenuitem bottomIndicator label="Child Item"></alaska-navmenuitem>
+        <alaska-navmenuitem bottomIndicator label="Child Item" (click)="goToPage('start')"></alaska-navmenuitem>
+        <alaska-navmenuitem bottomIndicator label="Child Item" (click)="goToPage('start')"></alaska-navmenuitem>
       </alaska-navmenuitem>
     </alaska-navmenu>
     <alaska-navmenu
       horizontal
       slot="right-menu"
     >
-      <alaska-navmenuitem label="Help" nolabel>
+      <alaska-navmenuitem label="Help" nolabel (click)="goToPage('start')">
         <auro-icon
           customColor
           slot="icon"
@@ -91,7 +91,7 @@
           [ngStyle]="{ 'width': '24px', 'height': '24px' }"
         ></auro-icon>
       </alaska-navmenuitem>
-      <alaska-navmenuitem label="Notifications" nolabel>
+      <alaska-navmenuitem label="Notifications" nolabel (click)="goToPage('start')">
         <auro-icon
           customColor
           slot="icon"
@@ -106,6 +106,7 @@
         label="User Name Longname"
         subLabel="useremaillongemail@saber.com"
         nolabel
+        (click)="goToPage('start')"
       >
         <auro-icon
           customColor
@@ -122,7 +123,7 @@
       slot="sidebarFooter"
     >
       <div [ngStyle]="{ 'display': 'flex', 'flexDirection': 'column', 'margin': '10px 0' }">
-        <alaska-navmenuitem label="Help" nolabel>
+        <alaska-navmenuitem label="Help" nolabel (click)="goToPage('start')">
           <auro-icon
             customColor
             slot="icon"
@@ -132,7 +133,7 @@
             [ngStyle]="{ 'width': '24px', 'height': '24px' }"
           ></auro-icon>
         </alaska-navmenuitem>
-        <alaska-navmenuitem label="Notifications" nolabel>
+        <alaska-navmenuitem label="Notifications" nolabel (click)="goToPage('start')">
           <auro-icon
             customColor
             slot="icon"
@@ -148,6 +149,7 @@
         label="User Name Longname"
         subLabel="useremaillongemail@saber.com"
         nolabel
+        (click)="goToPage('start')"
       >
         <auro-icon
           customColor
@@ -160,7 +162,7 @@
       </alaska-navmenuitem>
     </alaska-navmenu>
 </alaska-navigation>
-<ods-button (click)="handleClick()" [buttontype]="buttonType" [disabled]="buttonDisabled">{{ buttonText }}</ods-button>
 <section class="main-outlet">
+  <ods-button (click)="handleClick()" [buttontype]="buttonType" [disabled]="buttonDisabled">{{ buttonText }}</ods-button>
   <router-outlet></router-outlet>
 </section>
