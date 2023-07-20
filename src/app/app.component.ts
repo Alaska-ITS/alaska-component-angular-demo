@@ -9,9 +9,9 @@ import { Location } from '@angular/common';
 export class AppComponent {
   @ViewChild('navigation') navigation!: ElementRef;
   @Input() action!: string;
-  @Input() sticky!: boolean;
+  @Input() sticky: boolean = true;
   @Input() slidebar!: boolean;
-  @Input() persistentHeader!: boolean;
+  @Input() persistentHeader: boolean = true;
   @Input() mode!: string;
   @Input() withIcon: boolean = true;
   @Input() max: string = '{"medium":3, "large":4}';
@@ -23,7 +23,7 @@ export class AppComponent {
   buttonDisabled = false;
   @Input() selected!: boolean;
   activeUrl = '';
-event: any;
+  event: any;
 
   constructor(private router: Router, private _location: Location) { }
 
