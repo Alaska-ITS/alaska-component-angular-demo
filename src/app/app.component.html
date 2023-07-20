@@ -1,5 +1,4 @@
 <alaska-navigation
-    action="search"
     max='{"medium":3, "large":4}'
     contentClass=".main-outlet"
     #navigation
@@ -162,7 +161,7 @@
       </alaska-navmenuitem>
     </alaska-navmenu>
 </alaska-navigation>
-<section class="main-outlet">
+<main class="main-outlet">
   <ods-button (click)="handleClick()" [buttontype]="buttonType" [disabled]="buttonDisabled">{{ buttonText }}</ods-button>
   <router-outlet></router-outlet>
-</section>
+</main>

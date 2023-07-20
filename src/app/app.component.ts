@@ -41,7 +41,11 @@ export class AppComponent {
       this.buttonType = 'secondary';
       this.persistentHeader = false;
       this.mode = 'vertical';
-      this.sticky = true;
+      if (window.innerWidth <= 768) {
+        this.sticky = false;
+      } else {
+        this.sticky = true;
+      }
     } else {
       this.buttonText = "I've been change Horizontal Navigation";
       this.buttonType = 'primary';
