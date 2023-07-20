@@ -1,21 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@alaskaairux/orion-design-tokens/dist/tokens/TokenProperties';
+@import '~@alaskaairux/orion-design-tokens/dist/tokens/TokenVariables';
+@import '~@alaskaairux/orion-web-core-style-sheets/dist/breakpoints';
+@import '~@alaskaairux/orion-web-core-style-sheets/dist/baseline';
 
+// AURO
+@import "~@alaskaairux/design-tokens/dist/tokens/CSSOpacityProperties.scss";
+@import "~@alaskaairux/design-tokens/dist/tokens/SCSSVariablesMapFlat.scss";
+@import "~@alaskaairux/design-tokens/dist/tokens/SassCustomProperties.scss";
+@import "~@alaskaairux/design-tokens/dist/tokens/SassCustomPropertiesColorRGB.scss";
+@import "~@alaskaairux/design-tokens/dist/tokens/SassSizeCustomProperties.scss";
 @import "~@alaskaairux/design-tokens/dist/tokens/SCSSVariables";
 @import "~@alaskaairux/design-tokens/dist/tokens/SassCustomProperties";
-@import "~@alaskaairux/webcorestylesheets/dist/breakpoints";
-@import '~@alaskaairux/webcorestylesheets/dist/fonts';
-@import "~@alaskaairux/webcorestylesheets/dist/normalize";
-@import "~@alaskaairux/webcorestylesheets/dist/essentials";
-@import "~@alaskaairux/webcorestylesheets/dist/utilityClasses";
-@import "~@phtnalaska/design-tokens/dist/tokens/SCSSVariables";
-@import "~@phtnalaska/design-tokens/dist/tokens/SassCustomProperties";
+
+// ALASKA
+@import "~@alaska-its/design-tokens/dist/tokens/SassCustomLightThemes.scss";
+@import "~@alaska-its/design-tokens/dist/tokens/SassCustomDarkThemes.scss";
+@import "~@alaska-its/design-tokens/dist/tokens/SassCustomProperties.scss";
+@import "~@alaska-its/design-tokens/dist/tokens/SassCustomPropertiesColorRGB.scss";
+@import "~@alaska-its/design-tokens/dist/global.scss";
+@import "~@alaska-its/design-tokens/dist/alaska-table.scss";
+
+// $alaska-font-family: 'https://raw.githubusercontent.com/alsacreations/webfonts/master/lato-regular/lato-regular.woff2';
+// @import '~@alaskaairux/orion-web-core-style-sheets/dist/fonts';
 
 //$asset-font-circular-dir: 'https://resource.alaskaair.net/stylesheets/circular/';
 // $alaska-font-family: 'https://raw.githubusercontent.com/alsacreations/webfonts/master/lato-regular/lato-regular.woff2';
 // @import "../node_modules/@phtnalaska/design-tokens/dist/font-face.scss";
 
 
-body { 
+body {
+    height: 100vh;
     margin: auto;
     background-color: var(--auro-color-background-lightest);
 }
