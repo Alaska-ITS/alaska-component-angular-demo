@@ -15,10 +15,12 @@
 
   <h2>Datepicker</h2>
 
-<pre>
+<span>
   From Date: {{ fromDate }}
+</span>
+<span>
   To Date: {{ toDate }}
-</pre>
+</span>
 
   <alaska-datepicker
     (date-from-changed)="onDateFrom($event)"
@@ -43,7 +45,7 @@
 </alaska-datepicker>
 
 <p>
-  why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? 
+  why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden? why am I partially hidden?
 </p>
 
   <pre>Value: "{{ birthday.value }}"</pre>
@@ -150,6 +152,7 @@
     label="Label"
     name="segmentDemo"
     value="1"
+    style="width: 200px;"
   ></alaska-segmentedcontrol>
   <alaska-segmentedcontrol
     id="2"
@@ -157,6 +160,7 @@
     label="Label"
     name="segmentDemo"
     value="2"
+    style="width: 200px;"
   ></alaska-segmentedcontrol>
 </alaska-segmentedcontrol-group>
 <pre>Value: "{{ segControl.value }}"</pre>
