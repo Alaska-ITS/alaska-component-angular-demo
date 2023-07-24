@@ -5,8 +5,7 @@
     [attr.sticky]="sticky === true ? '' : null"
     [attr.slidebar]="slidebar === true ? '' : null"
     [attr.persistentHeader]="persistentHeader === true ? '' : null"
-    [attr.mode]="slidebar === true ? 'vertical' : 'horizontal'"
-  >
+    [attr.mode]="slidebar === true ? 'vertical' : 'horizontal'">
     <img src="../assets/alaska-rain-logo-light.svg" alt="logo" slot="logo"/>
     <alaska-navmenu horizontal slot="left-menu" max="max">
       <alaska-navmenuitem bottomIndicator label="Dashboard" expanded>
@@ -76,45 +75,15 @@
         <alaska-navmenuitem bottomIndicator label="Child Item" (click)="goToPage('start')"></alaska-navmenuitem>
       </alaska-navmenuitem>
     </alaska-navmenu>
-    <alaska-navmenu
-      horizontal
-      slot="right-menu"
-    >
+    <alaska-navmenu horizontal slot="right-menu">
       <alaska-navmenuitem label="Help" nolabel (click)="goToPage('start')">
-        <auro-icon
-          customColor
-          slot="icon"
-          category="alert"
-          name="question-stroke"
-          customsize
-          [ngStyle]="{ 'width': '24px', 'height': '24px' }"
-        ></auro-icon>
+        <auro-icon slot="icon" category="alert" name="question-stroke" customsize style="width: 24px;height: 24px;"></auro-icon>
       </alaska-navmenuitem>
-      <alaska-navmenuitem label="Notifications" nolabel (click)="goToPage('start')">
-        <auro-icon
-          customColor
-          slot="icon"
-          category="interface"
-          name="notification"
-          customsize
-          [ngStyle]="{'width': '24px', 'height': '24px' }"
-        ></auro-icon>
+      <alaska-navmenuitem label="Notifications" nolabel marker (click)="goToPage('start')">
+        <auro-icon slot="icon" category="interface" name="notification" customsize style="width: 24px;height: 24px;"></auro-icon>
       </alaska-navmenuitem>
-      <alaska-navmenuitem
-        id="user"
-        label="User Name Longname"
-        subLabel="useremaillongemail@saber.com"
-        nolabel
-        (click)="goToPage('start')"
-      >
-        <auro-icon
-          customColor
-          slot="icon"
-          category="interface"
-          name="account-stroke"
-          customSize
-          [ngStyle]="{'width': '32px', 'height': '32px' }"
-        ></auro-icon>
+      <alaska-navmenuitem id="user" label="Ryan" nolabel (click)="goToPage('start')">
+        <auro-icon slot="icon" category="interface" name="account-stroke" customSize style="width: 32px; height:32px;" customsize style="width: 24px;height: 24px;"></auro-icon>
       </alaska-navmenuitem>
     </alaska-navmenu>
     <alaska-navmenu
@@ -163,5 +132,6 @@
 </alaska-navigation>
 <main class="main-outlet">
   <ods-button (click)="handleClick()" [buttontype]="buttonType" [disabled]="buttonDisabled">{{ buttonText }}</ods-button>
+  <ods-button class="theme" (click)="handleThemeClick()" [buttontype]="buttonType">{{ buttonTextTheme }}</ods-button>
   <router-outlet></router-outlet>
 </main>

@@ -16,10 +16,11 @@ export class AppComponent {
   @Input() withIcon: boolean = true;
   @Input() max: string = '{"medium":3, "large":4}';
   @Input() contentClass!: string;
-  @Input() dark: boolean = false;
+  @Input() ondark: boolean = false;
   title = 'ui-component-demo';
-  buttonText = 'Click me';
+  buttonText = 'Vertical';
   buttonType = 'primary';
+  buttonTextTheme = 'Dark';
   buttonDisabled = false;
   @Input() selected!: boolean;
   activeUrl = '';
@@ -37,17 +38,30 @@ export class AppComponent {
   handleClick() {
     this.slidebar = !this.slidebar;
     if (this.slidebar) {
-      this.buttonText = "I've been change Sideebar Navigation";
+      this.buttonText = "Horizontal";
       this.buttonType = 'secondary';
       this.persistentHeader = false;
       this.mode = 'vertical';
       this.sticky = true;
     } else {
-      this.buttonText = "I've been change Horizontal Navigation";
+      this.buttonText = "Vertical";
       this.buttonType = 'primary';
       this.persistentHeader = true;
       this.mode = 'horizontal';
       this.sticky = true;
+    }
+  }
+
+  handleThemeClick() {
+    this.ondark = !this.ondark;
+    if (this.ondark) {
+      this.buttonTextTheme = "Light";
+      this.buttonType = 'secondary';
+      this.ondark = true;
+    } else {
+      this.buttonTextTheme = "Dark";
+      this.buttonType = 'primary';
+      this.ondark = false;
     }
   }
 
