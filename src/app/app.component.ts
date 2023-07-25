@@ -20,7 +20,6 @@ export class AppComponent {
   title = 'ui-component-demo';
   buttonText = 'Vertical';
   buttonType = 'primary';
-  buttonTextTheme = 'Dark';
   buttonDisabled = false;
   @Input() selected!: boolean;
   activeUrl = '';
@@ -49,19 +48,6 @@ export class AppComponent {
       this.persistentHeader = true;
       this.mode = 'horizontal';
       this.sticky = true;
-    }
-  }
-
-  handleThemeClick() {
-    this.ondark = !this.ondark;
-    if (this.ondark) {
-      this.buttonTextTheme = "Light";
-      this.buttonType = 'secondary';
-      this.ondark = true;
-    } else {
-      this.buttonTextTheme = "Dark";
-      this.buttonType = 'primary';
-      this.ondark = false;
     }
   }
 
